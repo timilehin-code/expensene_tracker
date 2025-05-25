@@ -19,4 +19,4 @@ Welcome to the Python Expense Tracker! This simple application helps beginners m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/timilehin-code/expense_tracker.git
+ git clone https://github.com/timilehin-code/expensene_tracker.git
