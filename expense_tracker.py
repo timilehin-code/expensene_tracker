@@ -1,6 +1,6 @@
 import random
-randm_number = random.randint(0, 100)
-print(randm_number)
+random_number = random.randint(0, 100)
+print(random_number)
 # expense tracker
 # creating a list for expensese
 expenses = []
@@ -59,7 +59,7 @@ def expense_summary():
 
 def save_expense():
     name = input("enter your name:")
-    with open(f"c:/Users/HP/Downloads/{name}-expenses{randm_number}.txt", "w") as file:
+    with open(f"c:/Users/HP/Downloads/{name}-expenses{random_number}.txt", "w") as file:
         for expense in expenses:
             file.write(
                 f"NGN{expense['amount']}, {expense['category']}, {expense['description']}\n"
