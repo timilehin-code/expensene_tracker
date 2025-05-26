@@ -14,7 +14,7 @@ def menu():
     print("4.save and exit")
 
 
-# finction to add new expenses and details
+# function to add new expenses and details
 
 
 def add_expense():
