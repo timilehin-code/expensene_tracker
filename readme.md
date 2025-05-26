@@ -8,7 +8,7 @@ Welcome to the Python Expense Tracker! This simple application helps beginners m
 - **Categorization**: Organize expenses into categories (e.g., Food, Transport, Entertainment).
 - **View Summary**: Get a summary of your spending over a specified period.
 - **User-Friendly**: Designed with beginners in mind, featuring straightforward commands.
-- **save**: Be able to save your expenses as a text file
+- **save**: Be able to save your expenses as a text file.
 
 ## Requirements
 
