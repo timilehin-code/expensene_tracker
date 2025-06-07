@@ -12,7 +12,7 @@ Welcome to the Python Expense Tracker! This simple application helps beginners m
 
 ## Requirements
 
-- Python 3.13.2
+- Python 3.7+
 - Basic understanding of Python and command-line interface
 
 ## Installation

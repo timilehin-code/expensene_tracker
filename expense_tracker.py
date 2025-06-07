@@ -1,5 +1,8 @@
 import random
 random_number = random.randint(0, 100)
+# custom module that contains the variable of  the directory of where the file will be saved 
+# which i called with dir.dir
+import dir 
 print(random_number)
 # expense tracker
 # creating a list for expensese
@@ -20,8 +23,8 @@ def menu():
 def add_expense():
     try:
         amount = float(input("Enter the amount: NGN"))
-        category = input("enter category e.g'internet,rent,cloth'")
-        description = input("enter a short description")
+        category = input("enter category e.g'internet,rent,cloth':")
+        description = input("enter a short description:")
         expenses_details = {
             "amount": amount,
             "category": category,
@@ -52,14 +55,14 @@ def expense_summary():
     for expense in expenses:
         category = expense["category"]
         summary["category"] = summary.get(category, 0) + expense["amount"]
-    print("\n====== expensence summmary by category======")
+    print("\n====== expenses summmary by category======")
     for category, total in summary.items():
         print(f"{category} - NGN{total:.2F}")
 
 
 def save_expense():
     name = input("enter your name:")
-    with open(f"c:/Users/HP/Downloads/{name}-expenses{random_number}.txt", "w") as file:
+    with open(dir.dir,"w") as file:
         for expense in expenses:
             file.write(
                 f"NGN{expense['amount']}, {expense['category']}, {expense['description']}\n"
