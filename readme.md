@@ -15,6 +15,13 @@ Welcome to the Python Expense Tracker! This simple application helps beginners m
 - Python 3.7+
 - Basic understanding of Python and command-line interface
 
+## Dependeies
+ - a module called dir to keep the user file path in which the expense txt file will be save
+  ``` python
+   dir =f"c:/parentFolder/SubFolder/folder/{name}-expenses{random_number}.txt"
+
+  ```
+
 ## Installation
 
 1. Clone the repository:
