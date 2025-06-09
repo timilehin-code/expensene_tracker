@@ -1,8 +1,5 @@
 import random
 random_number = random.randint(0, 100)
-# custom module that contains the variable of  the directory of where the file will be saved 
-# which i called with dir.dir
-import dir 
 print(random_number)
 # expense tracker
 # creating a list for expensese
@@ -17,7 +14,7 @@ def menu():
     print("4.save and exit")
 
 
-# finction to add new expenses and details
+# function to add new expenses and details
 
 
 def add_expense():
