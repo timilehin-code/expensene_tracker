@@ -1,6 +1,7 @@
 import random
+# collecting directory to save the file
+import dir
 random_number = random.randint(0, 100)
-print(random_number)
 # expense tracker
 # creating a list for expensese
 expenses = []
