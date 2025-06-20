@@ -16,10 +16,13 @@ Welcome to the Python Expense Tracker! This simple application helps beginners m
 - Basic understanding of Python and command-line interface
 
 ## Dependeies
- - a module called dir to keep the user file path in which the expense txt file will be save
+ - a module called dir to keep the user file path in which the expense txt file will be 
   ``` python
    dir =f"c:/parentFolder/SubFolder/folder/{name}-expenses{random_number}.txt"
-
+  ```
+ - pandas module to be able to save expenses file as a csv file.
+  ``` bash
+      pip install pandas
   ```
 
 ## Installation

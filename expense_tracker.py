@@ -13,6 +13,7 @@ def menu():
     print("2. view all expenses")
     print("3.show expense summary")
     print("4.save and exit")
+    print("5.save to csv")
 
 
 # function to add new expenses and details
