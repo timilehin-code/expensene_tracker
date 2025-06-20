@@ -1,6 +1,6 @@
 import random
 # collecting directory to save the file
-import dir
+import pandas as pd
 random_number = random.randint(0, 100)
 # expense tracker
 # creating a list for expensese
@@ -60,6 +60,7 @@ def expense_summary():
 
 def save_expense():
     name = input("enter your name:")
+    import dir
     with open(dir.dir,"w") as file:
         for expense in expenses:
             file.write(
@@ -67,10 +68,16 @@ def save_expense():
             )
     print("expense saved sucessfully")
 
+def save_csv():
+    if expenses:
+        df = pd.DataFrame(expenses)
+        df.to_csv(f"expenses{random_number}.csv", index=False) 
+    else:
+        print("file did not save")
 
 while True:
     menu()
-    choice = input("choose option (1-4):")
+    choice = input("choose option (1-5):")
     if choice == "1":
         add_expense()
     elif choice == "2":
@@ -80,5 +87,8 @@ while True:
     elif choice == "4":
         save_expense()
         print("thanks for using our service!")
+    elif choice == "5":
+        save_csv()
+        print("File saved as csv")
     else:
         print("wrong input!")
